@@ -46,7 +46,7 @@ public class NumberTester{
         try {
             Scanner s = new Scanner(new File(fileName));
             while (s.hasNextLine()){
-                
+
             }
 
         } catch (FileNotFoundException e) {
