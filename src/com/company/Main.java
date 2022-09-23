@@ -3,7 +3,8 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        NumberTester nT = new NumberTester("File");
+        NumberTester nT = new NumberTester("test.txt");
+
 	nT.setOddEvenTester((n) -> (n % 2) == 0);
     nT.setPalindromeTester((n) -> {
         if (n <= 1)
@@ -19,10 +20,9 @@ public class Main {
     nT.setPalindromeTester((n) -> {
 
         String reverse = new StringBuffer(n + "").reverse().toString();
-
-
         return (n + "").equals(reverse);
     });
+    nT.testFile();
 
 }
 }
