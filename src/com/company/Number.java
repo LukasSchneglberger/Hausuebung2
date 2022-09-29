@@ -4,6 +4,11 @@ public class Number {
     private double a;
     private double b;
 
+    public Number(double xA, double xB) {
+        this.a = a;
+        this.b = b;
+    }
+
     public double getA() {
         return a;
     }
