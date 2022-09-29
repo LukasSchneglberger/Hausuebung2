@@ -6,7 +6,9 @@ public class CalculatorController {
     public static void main(String[] args) {
 
         Scanner s = new Scanner(System.in);
-        AbstractCalculator calc = null;
+        RationalCalculator calc = null;
+        VectorCalculator vectorCalculator = null;
+        RationalCalculator rationalCalculator = null;
 
         System.out.println("Choose calculator:");
         System.out.println("1 - Relational Calculator");
@@ -27,22 +29,31 @@ public class CalculatorController {
                     System.out.println("Enter Number y b");
                     double yB = s.nextDouble();
                     int operation = chooseOperation();
-                    switch (operation){
-                        case 1 : Number tmp = calc.add(new Number(xA, xB), new Number(yA, yB));
+                    switch (operation) {
+                        case 1 -> {
+                            Number tmp = calc.add(new Number(xA, xB), new Number(yA, yB));
                             System.out.println("Solution:");
                             System.out.println("a = " + tmp.getA());
                             System.out.println("b = " + tmp.getB());
-                            break;
-                        case 2 : Number tmpSub = calc.subtract(new Number(xA, xB), new Number(yA, yB));
+                        }
+                        case 2 -> {
+                            Number tmpSub = calc.subtract(new Number(xA, xB), new Number(yA, yB));
                             System.out.println("Solution:");
                             System.out.println("a = " + tmpSub.getA());
                             System.out.println("b = " + tmpSub.getB());
-                            break;
-                        case 3 : Number tmpMul = calc.multiply(new Number(xA, xB), new Number(yA, yB));
+                        }
+                        case 3 -> {
+                            Number tmpMul = calc.multiply(new Number(xA, xB), new Number(yA, yB));
                             System.out.println("Solution:");
                             System.out.println("a = " + tmpMul.getA());
                             System.out.println("b = " + tmpMul.getB());
-                            break;
+                        }
+                        case 4 -> {
+                            Number tmpDiv = calc.divide(new Number(xA, xB), new Number(yA, yB));
+                            System.out.println("Solution:");
+                            System.out.println("a = " + tmpDiv.getA());
+                            System.out.println("b = " + tmpDiv.getB());
+                        }
                     }
             }
         }
