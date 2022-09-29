@@ -6,7 +6,7 @@ public class Main {
         NumberTester nT = new NumberTester("test.txt");
 
 	nT.setOddEvenTester((n) -> (n % 2) == 0);
-    nT.setPalindromeTester((n) -> {
+    nT.setPrimeTester((n) -> {
         if (n <= 1)
             return false;
 
