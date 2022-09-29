@@ -9,7 +9,7 @@ public abstract class AbstractCalculator {
     public AbstractCalculator (CalculationOperation add ,
                                  CalculationOperation subtract,
                                  CalculationOperation multiply,
-                                         CalculationOperation divide){
+                                 CalculationOperation divide){
 
     }
 

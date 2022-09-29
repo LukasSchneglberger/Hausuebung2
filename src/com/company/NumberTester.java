@@ -13,24 +13,6 @@ public class NumberTester{
     private String fileName;
     public NumberTester (String fileName ) {
        this.fileName = fileName;
-       oddTester = (n) -> (n % 2) == 0;
-       primeTester = (n) -> {
-           if (n <= 1)
-               return false;
-
-           for (int i = 2; i < n; i++)
-               if (n % i == 0)
-                   return false;
-
-           return true;
-       };
-        palindromeTester = (n) -> {
-
-            String reverse = new StringBuffer(n + "").reverse().toString();
-
-
-            return (n + "").equals(reverse);
-        };
     }
     public void setOddEvenTester (NumberTest oddTester) {
         this.oddTester = oddTester ;
