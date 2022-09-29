@@ -25,7 +25,7 @@ public class VectorCalculator  extends AbstractCalculator{
 
     @Override
     public Number subtract(Number a, Number b) {
-        return this.subtract(a, b);00000
+        return this.subtract(a, b);
     }
 
     @Override
