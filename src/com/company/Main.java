@@ -27,17 +27,6 @@ public class Main {
     nT.testFile();
 
 
-    AbstractCalculator calc;
 
-    switch ("asdfasdf^1"){
-        case "1":
-            calc = new RationalCalculator();
-        // ...
-        default:
-            calc = new RationalCalculator();
-
-    }
-
-    calc.add(null, null);
 }
 }
