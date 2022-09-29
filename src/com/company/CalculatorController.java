@@ -137,7 +137,7 @@ public class CalculatorController {
                             break;
                         }
                         case 4 -> {
-                            Number tmpDiv = rationalCalculator.divide(new Number(xA3, xB3), new Number(yA2, yB2));
+                            Number tmpDiv = rationalCalculator.divide(new Number(xA3, xB3), new Number(yA3, yB3));
                             System.out.println("Solution:");
                             System.out.println("a = " + tmpDiv.getA());
                             System.out.println("b = " + tmpDiv.getB());
